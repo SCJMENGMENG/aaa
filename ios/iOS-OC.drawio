@@ -4,8 +4,56 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="4DrlTJSZ5cez98okmt2o-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-1" target="4DrlTJSZ5cez98okmt2o-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="4DrlTJSZ5cez98okmt2o-1" value="App启动" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-2" target="4DrlTJSZ5cez98okmt2o-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-2" value="pre-main" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-4" target="4DrlTJSZ5cez98okmt2o-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-4" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;libsystem(系统库)加载&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-6" target="4DrlTJSZ5cez98okmt2o-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-6" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;分类方法插入类的方法列表中&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="360" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-8" target="4DrlTJSZ5cez98okmt2o-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-8" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;+load方法调用&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-10" target="4DrlTJSZ5cez98okmt2o-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-10" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Runtime注册回调函数&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="520" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-12" target="4DrlTJSZ5cez98okmt2o-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-12" value="main函数" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-14" target="4DrlTJSZ5cez98okmt2o-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-14" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;调用UIApplicationMain&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="720" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-16" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;启动主线程&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="800" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
