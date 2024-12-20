@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="第 1 页" id="weAJyAuKUi2FDlKsi1JT">
-    <mxGraphModel dx="850" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1275" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -54,6 +54,9 @@
         <mxCell id="4DrlTJSZ5cez98okmt2o-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-14" target="4DrlTJSZ5cez98okmt2o-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-14" target="4DrlTJSZ5cez98okmt2o-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="4DrlTJSZ5cez98okmt2o-14" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;UIApplicationMain启动&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="760" width="200" height="40" as="geometry" />
         </mxCell>
@@ -98,6 +101,12 @@
         </mxCell>
         <mxCell id="4DrlTJSZ5cez98okmt2o-46" value="&lt;div style=&quot;white-space-collapse: preserve;&quot; data-line=&quot;true&quot; data-line-index=&quot;0&quot; data-zone-id=&quot;0&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;  load方法产生大量的page fault，是由于当进程访问虚拟内存时，对应物理内存不存在，导致触发page fault，而且启动需要调用的方法在不同类中，page大小又是固定的，这会导致启动加载的page变多，耗时更长，可通过二进制重排优化，也就是将启动需要的方法排在一起，减少page fault。&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=default;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
           <mxGeometry x="800" y="520" width="520" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-49" value="&lt;ol&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;延迟执行didFinishLaunchingwithOptions里耗时代码&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;延迟执行或启动后异步加载一些耗时的三方SDK，比如广告SDK、音视频相关库等&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;检查主线程是否有需要等待子线程释放锁的情况，控制线程数量和优先级&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;图片资源放bundle里需要遍历，尽量放Asset管理&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;首帧渲染优化，比如loading动画不用GIF，懒加载的view不要创建时设置hidden，不需要显示时就不要提前创建（GIF动画是连帧动画，需要逐帧渲染，会占用更多CPU和内存资源，可替换为Lottie动画或自定义View动画，Lottie动画可通过矢量图形方式提供流畅动画效果，无需逐帧渲染，减少资源消耗；懒加载视图创建就设置hidden，会产生不必要的渲染开销，即使为hidden，系统仍会在创建时分配内存、布局、渲染和资源加载等操作，会增加启动延迟）&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="720" width="840" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4DrlTJSZ5cez98okmt2o-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.165;entryY=-0.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4DrlTJSZ5cez98okmt2o-40" target="4DrlTJSZ5cez98okmt2o-49">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
