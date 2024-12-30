@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="第 1 页" id="weAJyAuKUi2FDlKsi1JT">
-    <mxGraphModel dx="3843" dy="927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3442" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -194,6 +194,21 @@
         </mxCell>
         <mxCell id="n9S_lLzNVDDpD9XMv6Da-1" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;static&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;修饰局部变量（限制作用域）&lt;/li&gt;&lt;ol&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;生命周期：程序运行中只创建一次，并且函数调用结束后不会被销毁，会保持上次修改的值；&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;作用域：只能在函数内使用；&lt;/li&gt;&lt;/ol&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;修饰全局变量（限制链接作用域）&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;一般声明在.m里，当前文件可见，外部文件不能访问；&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;const（定义常量）&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;ul&gt;&lt;li&gt;不可修改：初始化后不可修改；&lt;/li&gt;&lt;li&gt;类型安全：可用于数组、指针等类型，编程中不会修改常量的值；&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;static和const一起使用：&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;修饰局部常量：可以确保该常量在函数内不可修改，且在函数外不可访问；&lt;/li&gt;&lt;li&gt;修饰全局常量：可以限制常量作用域，使其仅在当前文件中有效；&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-1080" y="320" width="600" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="n9S_lLzNVDDpD9XMv6Da-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="n9S_lLzNVDDpD9XMv6Da-5" target="n9S_lLzNVDDpD9XMv6Da-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n9S_lLzNVDDpD9XMv6Da-5" value="Runtime" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n9S_lLzNVDDpD9XMv6Da-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="n9S_lLzNVDDpD9XMv6Da-6" target="n9S_lLzNVDDpD9XMv6Da-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n9S_lLzNVDDpD9XMv6Da-6" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Runtime：就是将数据类型的确定由编译时推迟到运行时，编写的OC代码，在程序运行时，都会转成Runtime的C语言代码，并创建类和对象，进行消息发送和转发。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;常用来：&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;创建类，给类添加属性、方法；&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;方法交换；&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;获取对象属性、私有属性；&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;字典转换模型&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;KVC、KVO&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="160" width="520" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="n9S_lLzNVDDpD9XMv6Da-8" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;数据结构：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;objc_object：对象&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;objc_class：继承自objc_object（类对象）&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;isa指针：共用体类型，有32位和64位；&lt;/li&gt;&lt;ol&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;指针型isa：代表Class的地址；&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;非指针型isa：值的部分代表Class地址；&lt;/li&gt;&lt;/ol&gt;&lt;/ol&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="360" width="520" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
