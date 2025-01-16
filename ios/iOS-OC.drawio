@@ -315,6 +315,15 @@
         <mxCell id="TCe388NKziWVWAZd2Kvc-6" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;多线程总结：&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;怎样用GCD实现多读单写？&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;ul&gt;&lt;li&gt;使用dispatch_barrier_async（异步栅栏实现）&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;iOS系统为我们提供了几种多线程技术，各自特点是怎样的？&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;主要提供了三种，分别为：GCD、NSOperation、NSThread；&lt;/li&gt;&lt;li&gt;CGD：常用来实现一些接单的线程同步，包括子线程的分派，还有多读单写等问题的解决；&lt;/li&gt;&lt;li&gt;NSOperation：常用来实现一些三方框架，比如AFN、SDWebImage等，其特点是可以方便对任务状态的控制，设置和移除任务依赖；&lt;/li&gt;&lt;li&gt;NSThread：常用来实现一个常驻线程；&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;NSOperation对象在Finished之后，是怎样从queue中移除的？&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;在内部通过KVO移除；&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;你都用过哪些锁？结合实际谈谈你是怎样使用的？&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;@synchronized、NSLock、递归锁、信号量；&lt;/li&gt;&lt;li&gt;@&amp;nbsp;synchronized：常用于单例的创建；&lt;/li&gt;&lt;li&gt;NSLock：常用于对资源抢占问题的处理，比如多线程处理多个图片展示，从图片数组中取出最后一个后，再移除最后一个，这时候不加锁，会造成两个线程同时读取一个图片的问题；&lt;/li&gt;&lt;li&gt;递归锁：方法A使用了锁，方法B也使用了锁，方法A调用方法B就会造成重入死锁，用递归锁可解决；&lt;/li&gt;&lt;li&gt;dispatch_semaphore_t信号量：App启动时需要动态从后台拿到环境，需阻塞App，等请求回来后再继续；&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;div style=&quot;white-space-collapse: preserve;&quot; data-line=&quot;true&quot; data-line-index=&quot;0&quot; data-zone-id=&quot;0&quot;&gt;多线程：&lt;/div&gt;&lt;div style=&quot;white-space-collapse: preserve;&quot; data-line=&quot;true&quot; data-line-index=&quot;1&quot; data-zone-id=&quot;0&quot;&gt;&lt;a data-lark-is-custom=&quot;false&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; href=&quot;https://www.jianshu.com/p/186f5cdbf4a4?utm_source=oschina-app&quot;&gt;https://www.jianshu.com/p/186f5cdbf4a4?utm_source=oschina-app&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2920" y="4840" width="760" height="440" as="geometry" />
         </mxCell>
+        <mxCell id="TCe388NKziWVWAZd2Kvc-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TCe388NKziWVWAZd2Kvc-11" target="TCe388NKziWVWAZd2Kvc-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TCe388NKziWVWAZd2Kvc-11" value="内存管理" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4280" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TCe388NKziWVWAZd2Kvc-12" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3800" y="160" width="1080" height="640" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
